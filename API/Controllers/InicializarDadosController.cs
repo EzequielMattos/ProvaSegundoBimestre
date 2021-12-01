@@ -31,6 +31,13 @@ namespace API.Controllers
                     new Produto { ProdutoId = 3, Nome = "Shorts", Preco = 100, Quantidade = 50, CategoriaId = 1 },
                 }
             );
+            _context.FormasPagamento.AddRange(new FormaPagamento[]
+            {
+                new FormaPagamento { FormaPagamentoId = 1, Forma = "Crédito", Destalhes = "Pagamento com o Cartão De Crédito"},
+                new FormaPagamento { FormaPagamentoId = 2, Forma = "Débito", Destalhes = "Pagamento com o Cartão De Débito"},
+                new FormaPagamento { FormaPagamentoId = 3, Forma = "Boleto", Destalhes = "Pagamento com o Boleto Bancario"},
+            }
+            );
             _context.SaveChanges();
             return Ok(new { message = "Dados inicializados com sucesso!" });
         }

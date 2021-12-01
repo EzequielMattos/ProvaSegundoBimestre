@@ -1,0 +1,11 @@
+### Cadastrar um nova categoria
+POST https://localhost:5001/api/forma/create
+Content-Type: application/json
+
+{
+    "Forma" : "Credito",
+    "Destalhes" : "Pagamento com o Cartão De Crédito"
+}
+
+### Listar todas as categorias
+GET https://localhost:5001/api/forma/list

@@ -1,2 +1,10 @@
+### Cadastrar um nova categoria
+POST https://localhost:5001/api/venda/create
+Content-Type: application/json
+
+{
+    "Nome" : "Bebida"
+}
+
 ### Listar vendas
 POST https://localhost:5001/api/venda/list
